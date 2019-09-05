@@ -1,0 +1,42 @@
+ssh mfcf17@macalan.c3sl.ufpr.br
+[fage]JAR_6ta_3hur_Ew
+
+
+MANDAR UM DIRETÓRIO PRO DINF:
+scp -r T3 mfcf17@macalan.c3sl.ufpr.br:~/
+ou
+scp -r T3/ mfcf17@macalan.c3sl.ufpr.br:~/
+
+
+MANDAR DE UM DIRETÓRIO DO DINF PARA CASA
+scp -r mfcf17@macalan.c3sl.ufpr.br:~/T3 .
+ou
+scp -r mfcf17@macalan.c3sl.ufpr.br:~/T3 /home/...
+
+
+
+
+likwid-perfctr -C 3 -g L2CACHE -m ./iccTrab02 -n 32
+likwid-perfctr -C 3 -g FLOPS_DP -m ./matmult -n 32
+
+-------------------------------------------------------------------------------------------------
+GNUPLOT:
+https://www.youtube.com/watch?v=bfTZIU2-ALY
+https://www.youtube.com/watch?v=Y37DTIF-kRQ
+http://gnuplot.sourceforge.net/docs_4.2/node223.html#set_pointsize
+http://www.gnuplotting.org/tag/linespoints/
+https://stackoverflow.com/questions/30976310/gnuplot-highlighting-points-when-with-lines
+
+lc - linecolor
+lt - linetype
+lw - linewidth
+pt - pointtype
+ps - pointsize
+w  - with
+lp - linespoints
+ls - linestyle
+-------------------------------------------------------------------------------------------------
+
+FIXAR O CLOCK DA MÁQUIANA:
+echo "performance" > /sys/devices/system/cpu/cpufreq/policy3/scaling_governor
+echo "powersave" > /sys/devices/system/cpu/cpufreq/policy3/scaling_governor  

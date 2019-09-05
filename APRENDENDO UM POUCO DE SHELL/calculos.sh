@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+PRIMEIRO=4;
+SEGUNDO=2;
+echo "OS NÚMEROS SÃO ${PRIMEIRO} ${SEGUNDO}"
+echo "ADICIONANDO"
+echo $((PRIMEIRO+SEGUNDO));
+
+
+echo "SUBTRAINDO"
+echo $((PRIMEIRO-SEGUNDO));
+
+echo "MULTIPLICANDO"
+echo $((PRIMEIRO*SEGUNDO));
+
+echo "DIVIDINDO"
+echo $((PRIMEIRO/SEGUNDO));
